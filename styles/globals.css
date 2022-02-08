@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+
+    .each-fade {
+      display: flex;
+      width: 100%;
+      flex-direction:column
+      
+    }
+    
+    .each-fade > div {
+      margin: auto;
+    }
+
+    .indicators{
+      display:none !important
+    }
+
+    
+}
