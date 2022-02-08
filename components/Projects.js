@@ -50,6 +50,15 @@ const Projects = () => {
             link: 'https://unichat-a824e.web.app/',
             images: ['/unichat/unichat1.png', '/unichat/unichat2.png', '/unichat/unichat3.png', '/unichat/unichat4.png'],
             code:'https://github.com/suryanshu-xs/unichat'
+        },
+        {
+            name: 'Tasker',
+            desc: 'A notes keeping app that saves your important notes and  todos.',
+            features: ['Responsive', 'Database', 'Authentication'],
+            techStack: ['React', 'Flip Toolkit', 'Firebase'],
+            link: 'https://tasker-3.web.app/',
+            images: ['/tasker/tasker1.png', '/tasker/tasker2.png', '/tasker/tasker3.png',],
+            code:'https://github.com/suryanshu-xs/tasker'
         }
     ]
 
