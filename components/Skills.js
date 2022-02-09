@@ -1,7 +1,9 @@
-import Image from 'next/image';
 import React from 'react';
 
+
 const Skills = () => {
+
+    const buttonProperties = ' text-center bg-button-background hover:bg-button-background-hover active:bg-button-background-active transition-colors'
 
     const skillsArray = [
         {
@@ -41,6 +43,10 @@ const Skills = () => {
 
     ]
 
+    const openPDF = () => {
+        window.open('./Profile.pdf')
+    }
+
     return <div className="my-[2rem] min-h-[80vh] bg-[url('/work2smallDevices.png')] md:bg-[url('/work2.png')] bg-center bg-cover flex flex-col " id='about' >
 
         <h1 className='text-center py-[0.75rem] text-[1.8rem] font-light  ' > My Skills </h1>
@@ -70,12 +76,14 @@ const Skills = () => {
 
                 <div className=' flex-1 lg:flex-0 flex justify-center items-center my-5 flex-col lg:justify-start lg:pt-6'  >
 
-                    <div className='w-[120px] h-[120px] md:w-[150px] bg-[url("/profile.png")] bg-center bg-cover md:h-[150px] rounded-full transition-colors bg-button-background text-center hover:bg-button-background-hover flex justify-center items-center text-[4rem] font-extralight lg:text-[5rem]  ' >
+                    <div className='w-[120px] h-[120px] md:w-[150px] bg-[url("/profile.jpg")] bg-center bg-cover md:h-[150px] rounded-full transition-colors bg-button-background text-center hover:bg-button-background-hover flex justify-center items-center text-[4rem] font-extralight lg:text-[5rem]  ' >
 
                         
                     </div>
 
-                    <p className='mt-[15px] text-[15px] font-medium lg:text-[17px] lg:mt-[30px] ' > 5 Years Of Experience </p>
+                    <button className={`${buttonProperties} mb-[0.8rem] mt-[2rem] text-[12px]  w-[6.5rem] h-[1.8rem] `} onClick={openPDF} > DOWNLOAD CV </button>
+
+                    <p className='text-[14px] font-normal lg:text-[16px] ' > 4 Years Of Experience </p>
 
                 </div>
 
